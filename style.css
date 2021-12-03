@@ -124,10 +124,11 @@ h1 {
 
 .result-page {
 	height: 92vh;
-	display: grid;
+	display: none;
 	grid-template-columns: 1fr 5fr 1fr;
 	/* grid-gap: 10px; */
 	align-items: flex-start;
+	
 }
 
 .info-list {
@@ -148,8 +149,6 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-
-	
 }
 
 .recipe-name {
@@ -189,13 +188,4 @@ h1 {
 	border-radius: 15px;
 } */
 
-
-.info-list,
-.info-box,
-.info-left,
-.info-middle,
-.info-right,
-.side {
-	border: red 2px solid;
-}
 

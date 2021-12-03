@@ -17,6 +17,10 @@ function handleInputChange() {
     return inputValue
 }
 async function handleRecipeClick() {
+
+    let resultspage = document.querySelector('.result-page');
+    resultspage.style.display = "grid";
+    
     let info = await fetchRecipe()
     const array = info.hits;
     const recipesList = array.map(function (recipe){
@@ -25,11 +29,11 @@ async function handleRecipeClick() {
         <img class="info-left" src="${recipe.recipe.images.REGULAR.url}" alt="food picture">
         <div class="info-middle">
           <div class="recipe-name">${recipe.recipe.label}</div>
-          <div class="recipe-short-description">${recipe.recipe.ingredientLines.map(item => {return item})}</div>
+          <div class="recipe-short-description">${recipe.recipe.ingredientLines.map(item => {return `</br></br>` + item })}</div>
 
         </div>
         <div class="info-right">
-        <div>${recipe.recipe.dietLabels[0]}</div>
+        ${recipe.recipe?.dietLabels[0] ? `<div>${recipe.recipe.dietLabels[0]}</div>` : "`</br> "}
         <div>${recipe.recipe.calories.toString().substring(0,5)}kcal</div>
         </div>
         </div>`
