@@ -47,4 +47,3 @@ btn.addEventListener('click', handleRecipeClick)
 //     })
 // let listFinal = list.join('');
 // ol.innerHTML = `${listFinal}`
-// }
