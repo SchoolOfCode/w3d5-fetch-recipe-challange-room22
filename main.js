@@ -1,4 +1,3 @@
-
 const btn = document.querySelector('.search-btn')
 const input = document.getElementById('search-input')
 const id = 'de35f7b7'
@@ -19,12 +18,12 @@ function handleInputChange() {
 }
 async function handleRecipeClick() {
     let info = await fetchRecipe()
-    const recipeArray = info.hits;
-    const recipes = recipeArray.map(function (recipe){
+    const array = info.hits;
+    const recipes = array.map(function (recipe){
         return 
-        `<img class="info-left" src="https://via.placeholder.com/150" alt="food picture">
+       ` <img class="info-left" src="https://via.placeholder.com/150" alt="food picture">
         <div class="info-middle">
-          <div>I am pasta</div>
+          <div>${recipe.recipe.label}</div>
           <div>I am brief description I am brief description I am brief description I am brief description</div>
           <div>40min</div>
           <div>384kcal</div>
@@ -34,9 +33,9 @@ async function handleRecipeClick() {
           <div>allergen symbol</div>
         </div>`
     })
-    let showRecipes = recipes.join('')
-    container.innerHTML = `${show}`
-    console.log(info.hits[0].recipe.label);
+    let showRecipes = recipes.join(' ')
+    container.innerHTML = showRecipes;
+    // console.log(showRecipes);
 }
 // info.hits[0].recipe.label
 btn.addEventListener('click', handleRecipeClick)
