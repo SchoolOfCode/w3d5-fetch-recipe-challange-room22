@@ -1,7 +1,7 @@
 const btn = document.querySelector('.search-btn')
 const input = document.getElementById('search-input')
 const id = 'de35f7b7'
-const container = document.querySelector('.info-box')
+const container = document.querySelector('.info-list')
 
 async function fetchRecipe() {
     let food = handleInputChange();
@@ -19,31 +19,28 @@ function handleInputChange() {
 async function handleRecipeClick() {
     let info = await fetchRecipe()
     const array = info.hits;
-    const recipes = array.map(function (recipe){
-        return 
-       ` <img class="info-left" src="https://via.placeholder.com/150" alt="food picture">
+    const recipesList = array.map(function (recipe){
+        console.log(recipe.recipe.ingredientLines);
+        return `<div class="info-box">
+        <img class="info-left" src="${recipe.recipe.images.REGULAR.url}" alt="food picture">
         <div class="info-middle">
-          <div>${recipe.recipe.label}</div>
-          <div>I am brief description I am brief description I am brief description I am brief description</div>
-          <div>40min</div>
-          <div>384kcal</div>
+          <div class="recipe-name">${recipe.recipe.label}</div>
+          <div class="recipe-short-description">${recipe.recipe.ingredientLines.map(item => {return item})}</div>
+
         </div>
         <div class="info-right">
-          <div>reviews</div>
-          <div>allergen symbol</div>
+        <div>${recipe.recipe.dietLabels[0]}</div>
+        <div>${recipe.recipe.calories.toString().substring(0,5)}kcal</div>
+        </div>
         </div>`
+      
     })
-    let showRecipes = recipes.join(' ')
+    let showRecipes = recipesList.join(' ')
     container.innerHTML = showRecipes;
-    // console.log(showRecipes);
+
 }
-// info.hits[0].recipe.label
+
 btn.addEventListener('click', handleRecipeClick)
 
 
-// const showItems = function (){
-//     const list = array.map( function (item){
-//     return <li>${item.text}</li>
-//     })
-// let listFinal = list.join('');
-// ol.innerHTML = `${listFinal}`
+
