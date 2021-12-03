@@ -25,14 +25,9 @@ body {
 	margin-left: 20px;
 }
 
-.nav,
-main,
-.col-right,
-.col-left {
-	/* border: 3px solid blue; */
-}
 .main {
-	display: flex;
+	/* display: flex; */
+	display: none;
 }
 .content {
 	width: 80%;
@@ -109,6 +104,51 @@ h1 {
 @font-face {
 	font-family: 'dear-love';
 	src: url('/assets/fonts/Dearlove.ttf');
+}
+
+
+.result-page {
+	width: 90%;
+	height: 92vh;
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-gap: 100px;
+	align-items: center;
+}
+
+.info-box {
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-gap: 15px;
+	margin-bottom: 15px;
+	background-color:bisque;
+	padding: 10px;
+}
+
+.info-middle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.side {
+	height: 70vh;
+	background-color: burlywood;
+}
+
+.info-list,
+.info-box,
+.info-left,
+.info-middle,
+.info-right,
+.side {
+	border: red 2px solid;
 }
 @font-face {
 	font-family: 'gotham-medium';
