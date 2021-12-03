@@ -14,6 +14,16 @@
 	--blond: #fff7c2ff;
 }
 
+@font-face {
+	font-family: 'dear-love';
+	src: url('/assets/fonts/Dearlove.ttf');
+}
+
+@font-face {
+	font-family: 'gotham-medium';
+	src: url('/assets/fonts/Gotham\ Medium\ Regular.ttf');
+}
+
 body {
 	margin: 0;
 	font-family: 'gotham-medium';
@@ -58,9 +68,6 @@ body {
 
 .nav-icon:hover {
 	color: var(--rosso-corsa);
-}
-
-.nav * {
 }
 
 .col-right,
@@ -115,32 +122,26 @@ h1 {
 	margin-bottom: 60px;
 }
 
-.main * {
-}
-@font-face {
-	font-family: 'dear-love';
-	src: url('/assets/fonts/Dearlove.ttf');
-}
-
 .result-page {
 	width: 90%;
 	height: 92vh;
-	margin: 40px;
+	margin: 10px;
 	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
-	grid-gap: 100px;
+	grid-template-columns: 1fr 5fr 1fr;
+	/* grid-gap: 10px; */
 	align-items: flex-start;
 }
 
 .info-list {
 	height: 85%;
 }
+
 .info-box {
 	display: grid;
 	grid-template-columns: 1fr 8fr 1fr;
-	grid-gap: 20px;
+	grid-gap: 10px;
 	margin-bottom: 15px;
-	background-color: var(--blond);
+	background-color: var(--nyanza);
 	padding: 30px;
 	border-radius: 15px;
 }
@@ -149,6 +150,18 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.recipe-name {
+	font-size: 25px;
+	font-weight: 700;
+	color: var(--rosso-corsa);
+	text-transform: capitalize;
+}
+
+.recipe-short-description {
+	opacity: 0.8;
+	color: rgb(36, 35, 35);
 }
 
 .info-middle-bottom {
@@ -161,13 +174,13 @@ h1 {
 	flex-direction: column;
 	justify-content: space-between;
 }
-
+/* 
 .side {
 	display: block;
 	background-color: burlywood;
 	height: 70vh;
 	border-radius: 15px;
-}
+} */
 
 .nutrition-info {
 	display: flex;
@@ -183,7 +196,4 @@ h1 {
 .side {
 	border: red 2px solid;
 }
-@font-face {
-	font-family: 'gotham-medium';
-	src: url('/assets/fonts/Gotham\ Medium\ Regular.ttf');
-}
+
