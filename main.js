@@ -24,13 +24,16 @@ async function handleRecipeClick() {
     let info = await fetchRecipe()
     const array = info.hits;
     const recipesList = array.map(function (recipe){
-        console.log(recipe.recipe.ingredientLines);
+        console.log(recipe.recipe.url);
         return `<div class="info-box">
         <img class="info-left" src="${recipe.recipe.images.REGULAR.url}" alt="food picture">
         <div class="info-middle">
           <div class="recipe-name">${recipe.recipe.label}</div>
           <div class="recipe-short-description">${recipe.recipe.ingredientLines.map(item => {return `</br></br>` + item })}</div>
-
+          <div class="link">
+          </br>
+            <a href="${recipe.recipe.url}" style="color:#55a630ff; text-decoration: none">Click for Instructions</a>
+          </div>
         </div>
         <div class="info-right">
         ${recipe.recipe?.dietLabels[0] ? `<div>${recipe.recipe.dietLabels[0]}</div>` : "`</br> "}
