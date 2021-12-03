@@ -176,7 +176,13 @@ h1 {
 	border-radius: 15px;
 }
 
-/* .info-list,
+.nutrition-info {
+	display: flex;
+	font-size: 12px;
+	color: rgb(95, 94, 94);
+}
+
+.info-list,
 .info-box,
 .info-left,
 .info-middle,
