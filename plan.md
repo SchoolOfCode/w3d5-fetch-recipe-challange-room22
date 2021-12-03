@@ -32,3 +32,15 @@ SEARCH PAGE:
                 col 2: 
                     div 1 for title
                     div 2 for text input & button 
+
+        Row for Result section
+            3 columns
+                col 1: empty
+                col 2: result
+                    divs for rows
+                        3 columns
+                            col 1: food pic
+                            col 2: name, brief Desc, length, calories
+                            col 3: reviews, allergen symbols
+                col 3: side
+                    symbol icon, allergen info
