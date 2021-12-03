@@ -1,7 +1,7 @@
-
 const btn = document.querySelector('.search-btn')
 const input = document.getElementById('search-input')
 const id = 'de35f7b7'
+const container = document.querySelector('.info-box')
 
 async function fetchRecipe() {
     let food = handleInputChange();
@@ -18,7 +18,32 @@ function handleInputChange() {
 }
 async function handleRecipeClick() {
     let info = await fetchRecipe()
-    console.log(info);
+    const array = info.hits;
+    const recipes = array.map(function (recipe){
+        return 
+       ` <img class="info-left" src="https://via.placeholder.com/150" alt="food picture">
+        <div class="info-middle">
+          <div>${recipe.recipe.label}</div>
+          <div>I am brief description I am brief description I am brief description I am brief description</div>
+          <div>40min</div>
+          <div>384kcal</div>
+        </div>
+        <div class="info-right">
+          <div>reviews</div>
+          <div>allergen symbol</div>
+        </div>`
+    })
+    let showRecipes = recipes.join(' ')
+    container.innerHTML = showRecipes;
+    // console.log(showRecipes);
 }
-
+// info.hits[0].recipe.label
 btn.addEventListener('click', handleRecipeClick)
+
+
+// const showItems = function (){
+//     const list = array.map( function (item){
+//     return <li>${item.text}</li>
+//     })
+// let listFinal = list.join('');
+// ol.innerHTML = `${listFinal}`

@@ -1,16 +1,16 @@
 :root {
 	/* CSS HEX BOLD */
-	 --rosso-corsa: #d30d0dff; 
-	 --red: #ff0000ff; 
-	 --android-green: #aacc00ff; 
-	 --green-ryb: #55a630ff; 
-	 --sizzling-sunrise: #ffdd00ff;
+	--rosso-corsa: #d30d0dff;
+	--red: #ff0000ff;
+	--android-green: #aacc00ff;
+	--green-ryb: #55a630ff;
+	--sizzling-sunrise: #ffdd00ff;
 
-	/* CSS HEX */  
-	--pale-pink: #fdd9d9ff; 
-	--spanish-pink: #ffc2c2ff; 
-	--cream: #f5ffc2ff; 
-	--nyanza: #daf1d0ff; 
+	/* CSS HEX */
+	--pale-pink: #fdd9d9ff;
+	--spanish-pink: #ffc2c2ff;
+	--cream: #f5ffc2ff;
+	--nyanza: #daf1d0ff;
 	--blond: #fff7c2ff;
 }
 
@@ -45,25 +45,23 @@ body {
 	width: 100vw;
 	justify-content: space-between;
 	align-items: center;
-
 }
 .btns {
 	margin-right: 5vw;
 }
 
 .nav-icon {
-	font-size: 2em; 
+	font-size: 2em;
 	color: var(--sizzling-sunrise);
 	margin-right: 20px;
 }
 
 .nav-icon:hover {
-	color: var(--rosso-corsa)
+	color: var(--rosso-corsa);
 }
 
 .nav * {
 }
-
 
 .col-right,
 .col-left {
@@ -82,26 +80,25 @@ body {
 .search input {
 	width: 85%;
 	border-radius: 5px;
-	box-shadow: 0 -2px 4px  var(--android-green) inset;
+	box-shadow: 0 -2px 4px var(--android-green) inset;
 	padding: 10px;
 }
 .search button {
 	width: 15%;
 	background-color: var(--android-green);
 	border-radius: 5px;
-
 }
 .title {
 	font-family: 'dear-love';
 	font-size: 4em;
 	color: var(--rosso-corsa);
 	display: flex;
-	align-items:stretch ;
+	align-items: stretch;
 	height: 50%;
 }
 
 h1 {
-	margin: 0
+	margin: 0;
 }
 
 .subtitle {
@@ -118,15 +115,12 @@ h1 {
 	margin-bottom: 60px;
 }
 
-
-
 .main * {
 }
 @font-face {
 	font-family: 'dear-love';
 	src: url('/assets/fonts/Dearlove.ttf');
 }
-
 
 .result-page {
 	width: 90%;
@@ -139,14 +133,14 @@ h1 {
 }
 
 .info-list {
-	height:85%;
+	height: 85%;
 }
 .info-box {
 	display: grid;
 	grid-template-columns: 1fr 8fr 1fr;
 	grid-gap: 20px;
 	margin-bottom: 15px;
-	background-color:var(--blond);
+	background-color: var(--blond);
 	padding: 30px;
 	border-radius: 15px;
 }
@@ -159,8 +153,7 @@ h1 {
 
 .info-middle-bottom {
 	display: inline-flex;
-	justify-content:flex-start;
-	
+	justify-content: flex-start;
 }
 
 .info-right {
@@ -170,7 +163,7 @@ h1 {
 }
 
 .side {
-	display:block;
+	display: block;
 	background-color: burlywood;
 	height: 70vh;
 	border-radius: 15px;
@@ -189,7 +182,7 @@ h1 {
 .info-right,
 .side {
 	border: red 2px solid;
-} */
+}
 @font-face {
 	font-family: 'gotham-medium';
 	src: url('/assets/fonts/Gotham\ Medium\ Regular.ttf');
