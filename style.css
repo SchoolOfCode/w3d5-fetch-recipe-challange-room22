@@ -142,8 +142,9 @@ h1 {
 	grid-template-columns: 1fr 8fr 1fr;
 	grid-gap: 15px;
 	margin-bottom: 15px;
-	background-color:bisque;
+	background-color: var(--blond);
 	padding: 10px;
+	border-radius: 5px;
 }
 
 .info-middle {
@@ -161,6 +162,12 @@ h1 {
 .side {
 	height: 70vh;
 	background-color: burlywood;
+}
+
+.nutrition-info {
+	display: flex;
+	font-size: 12px;
+	color: rgb(95, 94, 94);
 }
 
 .info-list,
