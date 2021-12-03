@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.nav,
+main,
+.col-right,
+.col-left {
+	/* border: 3px solid blue; */
+}
+.main {
+	display: flex;
+}
+.content {
+	width: 80%;
+	height: 72vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.nav {
+	width: 100vw;
+	height: 8vh;
+	background-color: aqua;
+}
+
+.col-right,
+.col-left {
+	width: 15%;
+}
+.search {
+	border: 3px solid black;
+}
+.title {
+	border: 3px solid black;
+}
