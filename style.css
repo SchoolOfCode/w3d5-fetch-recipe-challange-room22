@@ -1,16 +1,16 @@
 :root {
 	/* CSS HEX BOLD */
-	 --rosso-corsa: #d30d0dff; 
-	 --red: #ff0000ff; 
-	 --android-green: #aacc00ff; 
-	 --green-ryb: #55a630ff; 
-	 --sizzling-sunrise: #ffdd00ff;
+	--rosso-corsa: #d30d0dff;
+	--red: #ff0000ff;
+	--android-green: #aacc00ff;
+	--green-ryb: #55a630ff;
+	--sizzling-sunrise: #ffdd00ff;
 
-	/* CSS HEX */  
-	--pale-pink: #fdd9d9ff; 
-	--spanish-pink: #ffc2c2ff; 
-	--cream: #f5ffc2ff; 
-	--nyanza: #daf1d0ff; 
+	/* CSS HEX */
+	--pale-pink: #fdd9d9ff;
+	--spanish-pink: #ffc2c2ff;
+	--cream: #f5ffc2ff;
+	--nyanza: #daf1d0ff;
 	--blond: #fff7c2ff;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .main {
 	/* display: flex; */
-	display: none;
+	display: flex;
 }
 .content {
 	width: 80%;
@@ -63,26 +63,25 @@ body {
 .search input {
 	width: 85%;
 	border-radius: 5px;
-	box-shadow: 0 -2px 4px  var(--android-green) inset;
+	box-shadow: 0 -2px 4px var(--android-green) inset;
 	padding: 10px;
 }
 .search button {
 	width: 15%;
 	background-color: var(--android-green);
 	border-radius: 5px;
-
 }
 .title {
 	font-family: 'dear-love';
 	font-size: 4em;
 	color: var(--rosso-corsa);
 	display: flex;
-	align-items:stretch ;
+	align-items: stretch;
 	height: 50%;
 }
 
 h1 {
-	margin: 0
+	margin: 0;
 }
 
 .subtitle {
@@ -106,7 +105,6 @@ h1 {
 	src: url('/assets/fonts/Dearlove.ttf');
 }
 
-
 .result-page {
 	width: 90%;
 	height: 92vh;
@@ -121,7 +119,7 @@ h1 {
 	grid-template-columns: 1fr 8fr 1fr;
 	grid-gap: 15px;
 	margin-bottom: 15px;
-	background-color:bisque;
+	background-color: bisque;
 	padding: 10px;
 }
 
